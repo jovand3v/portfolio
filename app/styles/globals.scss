@@ -1,0 +1,27 @@
+:root {
+  --body-color: #0b0b0b;
+  --font-primary: #fff;
+  --font-secondary: grey;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background: var(--body-color);
+  color: var(--font-primary);
+  font-weight: 300;
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  ul,
+  ol {
+    list-style-type: none;
+  }
+}

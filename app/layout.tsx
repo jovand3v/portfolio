@@ -1,8 +1,8 @@
-import "./styles/globals.css";
+import "./styles/globals.scss";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 
-const poppins = Poppins({ weight: "400", subsets: ["latin"] });
+const poppins = Poppins({ weight: ["300", "400", "700"], subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Jovan Ilić - Front-end Developer",
