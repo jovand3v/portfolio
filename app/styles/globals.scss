@@ -1,7 +1,8 @@
 :root {
   --body-color: #0b0b0b;
-  --font-primary: #fff;
-  --font-secondary: grey;
+  --font-color-primary: #fff;
+  --font-color-secondary: grey;
+  --body-padding: 60px;
 }
 * {
   padding: 0px;
@@ -10,8 +11,13 @@
 }
 body {
   background: var(--body-color);
-  color: var(--font-primary);
+  color: var(--font-color-primary);
   font-weight: 300;
+  input,
+  button {
+    font-family: inherit;
+    font-weight: inherit;
+  }
   svg {
     width: 30px;
     height: 30px;
