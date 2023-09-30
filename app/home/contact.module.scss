@@ -1,0 +1,68 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title {
+  font-size: var(--fs-subsection-title);
+  line-height: var(--subsection-title-line-height);
+  text-transform: uppercase;
+}
+.subtitle {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: var(--fs-subsection-subtitle);
+  color: var(--foreground-color-secondary);
+}
+.description {
+  margin: 55px 0px;
+  line-height: var(--paragraph-line-height);
+}
+.socialIcons {
+  display: flex;
+  gap: 20px;
+}
+.socialIcon {
+  height: 31px;
+  width: auto;
+  cursor: pointer;
+}
+.form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.nameInputContainer {
+  display: flex;
+  gap: 15px;
+}
+.input {
+  height: 50px;
+  resize: none;
+  outline: none;
+  background: var(--background-color);
+  border: 1px solid var(--foreground-color-primary);
+  padding: 10px;
+  font-size: 15px;
+  color: var(--foreground-color-primary);
+  &::placeholder {
+    text-transform: uppercase;
+  }
+}
+.nameInput {
+  width: 50%;
+}
+.messageInput {
+  height: 250px;
+}
+.formBtn {
+  height: 50px;
+  width: 125px;
+  border: none;
+  background: var(--foreground-color-primary);
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 15px;
+}

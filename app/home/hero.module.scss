@@ -24,8 +24,9 @@
 }
 .description {
   margin: 60px 0px;
-  width: 500px;
-  line-height: 160%;
+  width: 550px;
+  font-size: 16px;
+  line-height: var(--paragraph-line-height);
 }
 .socials {
   display: flex;
