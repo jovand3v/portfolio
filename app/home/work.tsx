@@ -2,6 +2,7 @@ import WorkProjectShowcase from "./work-project-showcase";
 import s from "./work.module.scss";
 import test from "@/public/work/portfolio-1.png";
 import test2 from "@/public/work/portfolio-2.png";
+import BgDecal from "@/public/background-decals/bg-decal-1.svg";
 
 const Work = () => {
   return (
@@ -42,6 +43,7 @@ const Work = () => {
         images={[test, test2, test, test2, test, test2]}
         reverse={false}
       />
+      <BgDecal className={`bgDecal ${s.bgDecal}`} />
     </div>
   );
 };

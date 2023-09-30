@@ -60,7 +60,7 @@ const Hero = () => {
         <span className={s.langSelected}>EN</span>
         <ArrowShortIcon className={s.langIcon} />
       </div>
-      <BgDecal className={s.bgDecal} />
+      <BgDecal className={`bgDecal ${s.bgDecal}`} />
     </header>
   );
 };

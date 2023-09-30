@@ -115,16 +115,12 @@
   height: auto;
 }
 .bgDecal {
-  position: absolute;
-  height: 100%;
-  width: auto;
   overflow: hidden;
-  z-index: -1;
   left: 0px;
   transform: rotate(180deg) translateY(60%);
-  color: rgb(20, 20, 20);
   top: 50%;
 }
+
 @keyframes jump {
   0% {
     transform: translateY(0%);

@@ -1,3 +1,4 @@
+import s from "./styles/page.module.scss";
 import About from "./home/about";
 import Contact from "./home/contact";
 import Footer from "./home/footer";
@@ -7,7 +8,7 @@ import Work from "./home/work";
 
 export default function Home() {
   return (
-    <main>
+    <main className={s.main}>
       <Hero />
       <Section title="About" subtitle="Experience & Skills">
         <About />

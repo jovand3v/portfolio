@@ -15,6 +15,7 @@ import ReduxIcon from "@/public/icons/technologies/redux.svg";
 import GitIcon from "@/public/icons/technologies/git.svg";
 import RestIcon from "@/public/icons/technologies/rest.svg";
 import ArrowIcon from "@/public/icons/arrow.svg";
+import BgDecal from "@/public/background-decals/bg-decal-1.svg";
 
 const About = () => {
   return (
@@ -101,6 +102,7 @@ const About = () => {
           <span className={s.skillName}>RESTful APIs</span>
         </li>
       </ul>
+      <BgDecal className={`bgDecal ${s.bgDecal}`} />
     </div>
   );
 };

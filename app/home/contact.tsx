@@ -1,6 +1,7 @@
 import s from "./contact.module.scss";
 import GithubIcon from "@/public/icons/github.svg";
 import LinkedInIcon from "@/public/icons/linked-in.svg";
+import BgDecal from "@/public/background-decals/bg-decal-1.svg";
 
 const Contact = () => {
   return (
@@ -25,6 +26,7 @@ const Contact = () => {
         <textarea className={`${s.input} ${s.messageInput}`} placeholder="Message" />
         <button className={s.formBtn}>Submit</button>
       </form>
+      <BgDecal className={`bgDecal ${s.bgDecal}`} />
     </div>
   );
 };

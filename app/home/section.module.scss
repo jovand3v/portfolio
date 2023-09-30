@@ -1,6 +1,7 @@
 .main {
   margin: var(--section-margin) 0px;
-  padding: 0px calc(3 * var(--body-padding));
+  padding: 0px var(--section-padding);
+  position: relative;
 }
 .header {
   text-transform: uppercase;
