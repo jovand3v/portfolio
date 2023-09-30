@@ -28,7 +28,7 @@ const Hero = () => {
             </li>
             <li className={`${s.social} ${s.socialResume}`}>
               <span className={s.socialText}>Resume</span>
-              <ResumeDownloadIcon className={s.socialIcon} />
+              <ResumeDownloadIcon className={`${s.socialIcon} ${s.resumeIcon}`} />
             </li>
           </ul>
         </div>

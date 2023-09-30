@@ -1,5 +1,6 @@
 .main {
-  margin: 120px 0px;
+  --section-margin: 170px;
+  margin: var(--section-margin) 0px;
   padding: 0px calc(3 * var(--body-padding));
 }
 .header {
@@ -12,14 +13,14 @@
   gap: 20px;
 }
 .title {
-  font-size: 145px;
+  font-size: var(--fs-section-title);
   line-height: 0.7;
 }
 .subtitle {
   line-height: 0.7;
-  font-size: 30px;
-  color: var(--font-color-secondary);
+  font-size: var(--fs-section-subtitle);
+  color: var(--foreground-color-secondary);
 }
 .content {
-  margin-top: 150px;
+  margin-top: var(--section-margin);
 }

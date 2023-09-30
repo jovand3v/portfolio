@@ -7,7 +7,7 @@ const nextConfig = {
       use: [
         {
           loader: "@svgr/webpack",
-          options: { icon: "unset", replaceAttrValues: { "#fff": "currentColor", white: "currentColor" } },
+          options: { icon: "30px", replaceAttrValues: { "#fff": "currentColor", white: "currentColor" } },
         },
       ],
     });

@@ -4,7 +4,7 @@
   align-items: center;
 }
 .expTitle {
-  font-size: 60px;
+  font-size: var(--fs-subsection-title);
   line-height: 0.7;
 }
 .expList {
@@ -18,7 +18,7 @@
   flex-direction: column;
 }
 .expItemDate {
-  color: var(--font-color-secondary);
+  color: var(--foreground-color-secondary);
   margin-bottom: 2px;
 }
 .expItemTitle {
@@ -31,7 +31,7 @@
   border: none;
   background: none;
   outline: none;
-  color: var(--font-color-primary);
+  color: var(--foreground-color-primary);
   font-size: 18px;
   gap: 15px;
 }
