@@ -11,7 +11,7 @@ const Contact = () => {
           <h3 className={s.title}>Get in touch</h3>
           <span className={s.subtitle}>Let's work together</span>
         </header>
-        <p className={s.description}>Feel free to contact me at any time. I'll respond as soon as possible.</p>
+        <p className={s.description}>Feel free to contact me at any time, I'll respond as soon as possible.</p>
         <div className={s.socialIcons}>
           <LinkedInIcon className={s.socialIcon} />
           <GithubIcon className={s.socialIcon} />

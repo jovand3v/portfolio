@@ -1,15 +1,15 @@
 :root {
-  --background-color: #0b0b0b;
+  --background-color: #0a0a0a;
   --foreground-color-primary: #fff;
-  --foreground-color-secondary: grey;
+  --foreground-color-secondary: rgb(110, 110, 110);
   --bg-decal-color: rgb(18, 18, 18);
-  --section-margin: 170px;
+  --section-margin: 180px;
   --body-padding: 60px;
   --section-padding: calc(3 * var(--body-padding));
-  --fs-section-title: 150px;
-  --fs-section-subtitle: 30px;
-  --fs-subsection-title: 70px;
-  --fs-subsection-subtitle: 20px;
+  --fs-section-title: 155px;
+  --fs-section-subtitle: 32px;
+  --fs-subsection-title: 72px;
+  --fs-subsection-subtitle: 21px;
   --paragraph-line-height: 160%;
   --subsection-title-line-height: 1.2;
 }

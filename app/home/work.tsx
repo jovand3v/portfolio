@@ -8,36 +8,36 @@ const Work = () => {
   return (
     <div className={s.main}>
       <WorkProjectShowcase
-        title="KeepTrack"
-        subtitle="2021 - Designed & Coded (Personal Project)"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempus velit justo, quis vestibulum enim facilisis in. Donec efficitur pretium tortor sit amet tincidunt. Mauris laoreet dictum mollis. Etiam sollicitudin tortor quam, a dictum felis interdum a. Donec facilisis consequat enim ac consequat. Nunc quis dolor volutpat, vehicula nisi vel, mollis sem. Cras nec nibh quis turpis varius vestibulum eget a elit."
+        title="PHERRA"
+        subtitle="2023 - Desgined & Coded"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempus velit justo, quis vestibulum enim facilisis in. Donec efficitur pretium tortor sit amet tincidunt. Mauris laoreet dictum mollis. Etiam sollicitudin tortor quam, a dictum felis interdum a. Donec facilisis consequat enim ac consequat."
         liveLink="https://keep-track.netlify.app/"
         githubLink="https://github.com/Dremiq/KeepTrack"
         images={[test, test2, test, test2, test, test2]}
         reverse={true}
       />
       <WorkProjectShowcase
-        title="KeepTrack"
-        subtitle="2021 - Designed & Coded (Personal Project)"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempus velit justo, quis vestibulum enim facilisis in. Donec efficitur pretium tortor sit amet tincidunt. Mauris laoreet dictum mollis. Etiam sollicitudin tortor quam, a dictum felis interdum a. Donec facilisis consequat enim ac consequat. Nunc quis dolor volutpat, vehicula nisi vel, mollis sem. Cras nec nibh quis turpis varius vestibulum eget a elit."
+        title="PORTFOLIO"
+        subtitle="2022 - Designed & Coded"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempus velit justo, quis vestibulum enim facilisis in. Donec efficitur pretium tortor sit amet tincidunt. Mauris laoreet dictum mollis. Etiam sollicitudin tortor quam, a dictum felis interdum a. Donec facilisis consequat enim ac consequat."
         liveLink="https://keep-track.netlify.app/"
         githubLink="https://github.com/Dremiq/KeepTrack"
         images={[test, test2, test, test2, test, test2]}
         reverse={false}
       />
       <WorkProjectShowcase
-        title="KeepTrack"
-        subtitle="2021 - Designed & Coded (Personal Project)"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempus velit justo, quis vestibulum enim facilisis in. Donec efficitur pretium tortor sit amet tincidunt. Mauris laoreet dictum mollis. Etiam sollicitudin tortor quam, a dictum felis interdum a. Donec facilisis consequat enim ac consequat. Nunc quis dolor volutpat, vehicula nisi vel, mollis sem. Cras nec nibh quis turpis varius vestibulum eget a elit."
+        title="MASHDAPP"
+        subtitle="2023 - Partially Designed & Coded"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempus velit justo, quis vestibulum enim facilisis in. Donec efficitur pretium tortor sit amet tincidunt. Mauris laoreet dictum mollis. Etiam sollicitudin tortor quam, a dictum felis interdum a. Donec facilisis consequat enim ac consequat."
         liveLink="https://keep-track.netlify.app/"
         githubLink="https://github.com/Dremiq/KeepTrack"
         images={[test, test2, test, test2, test, test2]}
         reverse={true}
       />
       <WorkProjectShowcase
-        title="KeepTrack"
-        subtitle="2021 - Designed & Coded (Personal Project)"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempus velit justo, quis vestibulum enim facilisis in. Donec efficitur pretium tortor sit amet tincidunt. Mauris laoreet dictum mollis. Etiam sollicitudin tortor quam, a dictum felis interdum a. Donec facilisis consequat enim ac consequat. Nunc quis dolor volutpat, vehicula nisi vel, mollis sem. Cras nec nibh quis turpis varius vestibulum eget a elit."
+        title="KEEPTRACK"
+        subtitle="2021 - Designed & Coded"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempus velit justo, quis vestibulum enim facilisis in. Donec efficitur pretium tortor sit amet tincidunt. Mauris laoreet dictum mollis. Etiam sollicitudin tortor quam, a dictum felis interdum a. Donec facilisis consequat enim ac consequat."
         liveLink="https://keep-track.netlify.app/"
         githubLink="https://github.com/Dremiq/KeepTrack"
         images={[test, test2, test, test2, test, test2]}

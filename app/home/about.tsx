@@ -51,7 +51,7 @@ const About = () => {
         </li>
         <li className={s.skill}>
           <JavaScriptIcon className={s.skillIcon} />
-          <span className={s.skillName}>JavScript</span>
+          <span className={s.skillName}>JavaScript</span>
         </li>
         <li className={s.skill}>
           <SqlIcon className={s.skillIcon} />

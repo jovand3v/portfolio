@@ -4,18 +4,19 @@
   align-items: center;
 }
 .title {
-  font-size: var(--fs-subsection-title);
+  font-size: 100px;
   line-height: var(--subsection-title-line-height);
   text-transform: uppercase;
 }
 .subtitle {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: var(--fs-subsection-subtitle);
+  font-size: 30px;
+  line-height: 0.8;
   color: var(--foreground-color-secondary);
 }
 .description {
-  margin: 55px 0px;
+  margin: 50px 0px;
   line-height: var(--paragraph-line-height);
 }
 .socialIcons {
@@ -28,7 +29,7 @@
   cursor: pointer;
 }
 .form {
-  width: 400px;
+  width: 370px;
   display: flex;
   flex-direction: column;
   gap: 15px;
