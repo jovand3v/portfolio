@@ -50,7 +50,7 @@ const WorkProjectCarousel = (props: Props) => {
   return (
     <div className={s.main}>
       <div className={s.mainImgContainer}>
-        <Image src={selected} alt="" className={s.mainImg} />
+        <Image src={selected} alt="" className={s.mainImg} quality={100} />
       </div>
       <ul className={s.list} ref={listRef}>
         {images.map((img, i) => (

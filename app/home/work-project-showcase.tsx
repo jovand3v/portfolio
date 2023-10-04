@@ -40,7 +40,7 @@ const WorkProjectShowcase = (props: Props) => {
               </button>
             </Link>
           ) : (
-            <button className={s.btn}>
+            <button className={`${s.btn} ${s.btnDisabled}`} disabled={true}>
               Private <CodeIcon className={s.btnIcon} />
             </button>
           )}
