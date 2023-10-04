@@ -38,6 +38,10 @@
   gap: 10px;
   font-size: 15px;
 }
+.btnDisabled {
+  background: rgb(22, 22, 22);
+  cursor: not-allowed;
+}
 .btnIcon {
   width: 18px;
   height: auto;

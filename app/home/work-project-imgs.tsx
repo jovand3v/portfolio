@@ -57,7 +57,6 @@ const images = {
     MashdappDiscontinued3,
     MashdappDiscontinued4,
     MashdappDiscontinued5,
-    MashdappDiscontinued6,
   ],
   pherra: [
     Pherra1,
