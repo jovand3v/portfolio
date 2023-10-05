@@ -1,3 +1,4 @@
+"use client";
 import s from "./work-project-showcase.module.scss";
 import WorkProjectCarousel from "./work-project-carousel";
 import Link from "next/link";
@@ -5,6 +6,7 @@ import { Url } from "next/dist/shared/lib/router/router";
 import CodeIcon from "@/public/icons/code.svg";
 import EyeIcon from "@/public/icons/eye.svg";
 import { StaticImageData } from "next/image";
+import { useState } from "react";
 
 type Props = {
   title: string;
@@ -18,6 +20,8 @@ type Props = {
 
 const WorkProjectShowcase = (props: Props) => {
   const { title, subtitle, description, liveLink, githubLink, reverse, images } = props;
+  const [selected, setSelected] = useState<StaticImageData>(images[0]);
+  const [fullscreen, setFullscreen] = useState(false);
 
   return (
     <div className={`${s.main} ${reverse ? s.reversed : ""}`}>
@@ -46,7 +50,22 @@ const WorkProjectShowcase = (props: Props) => {
           )}
         </div>
       </div>
-      <WorkProjectCarousel images={images} />
+      <WorkProjectCarousel
+        images={images}
+        fullscreen={fullscreen}
+        setFullscreen={setFullscreen}
+        selected={selected}
+        setSelected={setSelected}
+      />
+      {fullscreen && (
+        <WorkProjectCarousel
+          images={images}
+          fullscreen={true}
+          setFullscreen={setFullscreen}
+          selected={selected}
+          setSelected={setSelected}
+        />
+      )}
     </div>
   );
 };
