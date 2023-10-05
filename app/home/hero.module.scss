@@ -100,20 +100,6 @@
   animation-fill-mode: forwards;
   animation-direction: alternate;
 }
-.lang {
-  position: absolute;
-  right: var(--body-padding);
-  top: var(--body-padding);
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 18px;
-  cursor: pointer;
-}
-.langIcon {
-  width: 11px;
-  height: auto;
-}
 .bgDecal {
   overflow: hidden;
   left: 0px;

@@ -1,11 +1,13 @@
+"use client";
 import Link from "next/link";
 import s from "./hero.module.scss";
 import LinkedInIcon from "@/public/icons/linked-in.svg";
 import GithubIcon from "@/public/icons/github.svg";
 import ResumeDownloadIcon from "@/public/icons/resume-download.svg";
 import ArrowIcon from "@/public/icons/arrow.svg";
-import ArrowShortIcon from "@/public/icons/arrow-short.svg";
 import BgDecal from "@/public/background-decals/bg-decal-1.svg";
+
+import HeroDropdown from "./hero-dropdown";
 
 const Hero = () => {
   return (
@@ -56,10 +58,7 @@ const Hero = () => {
         </nav>
       </div>
       <ArrowIcon className={s.exploreIcon} />
-      <div className={s.lang}>
-        <span className={s.langSelected}>EN</span>
-        <ArrowShortIcon className={s.langIcon} />
-      </div>
+      <HeroDropdown />
       <BgDecal className={`bgDecal ${s.bgDecal}`} />
     </header>
   );
