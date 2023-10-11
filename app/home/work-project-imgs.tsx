@@ -39,6 +39,12 @@ import Pherra19 from "@/public/work/pherra-19.png";
 import Pherra20 from "@/public/work/pherra-20.png";
 import Portfolio1 from "@/public/work/portfolio-1.png";
 import Portfolio2 from "@/public/work/portfolio-2.png";
+import Portfolio3 from "@/public/work/portfolio-3.png";
+import Portfolio4 from "@/public/work/portfolio-4.png";
+import Portfolio5 from "@/public/work/portfolio-5.png";
+import Portfolio6 from "@/public/work/portfolio-6.png";
+import Portfolio7 from "@/public/work/portfolio-7.png";
+import Portfolio8 from "@/public/work/portfolio-8.png";
 
 const images = {
   keep_track: [KeepTrack1, KeepTrack2, KeepTrack3, KeepTrack4],
@@ -80,7 +86,7 @@ const images = {
     Pherra19,
     Pherra20,
   ],
-  portfolio: [Portfolio1, Portfolio2],
+  portfolio: [Portfolio1, Portfolio2, Portfolio3, Portfolio4, Portfolio5, Portfolio6, Portfolio7, Portfolio8],
 };
 
 export default images;
