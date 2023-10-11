@@ -36,7 +36,7 @@ const Work = () => {
       <WorkProjectShowcase
         title="KEEPTRACK"
         subtitle="2021 - Designed & Coded"
-        description="KEEPTRACK is a personal front-end, nutrition tracking project. It's hosted on Netlify and was built using: React, Redux, SCSS, chart.js, and Figma. This project was initially built for personal use only but later I've decided to re-design and brand it, and put it as one of my main projects even if it was built in 2021."
+        description="KEEPTRACK is a personal front-end, nutrition tracking project. It's hosted on Netlify and was built using: React, Redux, SCSS, chart.js, and Figma. This project was initially built for personal use only but later I've decided to re-design it, brand it, and put it as one of my projects even if it was built in 2021."
         liveLink="https://keep-track.netlify.app/"
         githubLink="https://github.com/Dremiq/KeepTrack"
         images={images.keep_track}
