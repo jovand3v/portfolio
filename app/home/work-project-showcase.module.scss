@@ -42,8 +42,9 @@
   font-size: 15px;
 }
 .btnDisabled {
-  background: rgb(22, 22, 22);
   cursor: not-allowed;
+  color: var(--foreground-color-secondary);
+  border-color: var(--foreground-color-secondary);
 }
 .btnIcon {
   width: 18px;
