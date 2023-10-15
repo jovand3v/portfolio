@@ -1,0 +1,10 @@
+{
+  "Hero": {
+    "header": {
+      "profession": "Front-end Programer",
+      "description": "Zdravo, ja sam Jovan Ilić. Ja sam front-end programer, iz Srbije, sa back-end iskustvom i strašću za dizajnom. Istražite moj portfolio ili preuzmite moj životopis da biste saznali više."
+    },
+    "buttons": { "resume": "Rezime" },
+    "nav": { "explore": "Istrazi", "about": "O meni", "work": "Posao", "contact": "Kontakt" }
+  }
+}

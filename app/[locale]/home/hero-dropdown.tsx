@@ -1,18 +1,26 @@
+"use client";
 import s from "./hero-dropdown.module.scss";
 import ArrowShortIcon from "@/public/icons/arrow-short.svg";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { useState } from "react";
 import USFlag from "@/public/flags/us.png";
 import RSFlag from "@/public/flags/rs.png";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+
+type DropdownData = { code: string; flag: StaticImageData };
+type Dropdown = { data: DropdownData[]; active: boolean; selected: DropdownData };
 
 const HeroDropdown = () => {
-  const [dropdown, setDropdown] = useState({
-    data: [
-      { code: "EN", flag: USFlag },
-      { code: "SR", flag: RSFlag },
-    ],
+  const pathname = usePathname();
+  const data = [
+    { code: "en", flag: USFlag },
+    { code: "sr", flag: RSFlag },
+  ];
+  const [dropdown, setDropdown] = useState<Dropdown>({
+    data,
     active: false,
-    selected: { code: "EN", flag: USFlag },
+    selected: data.find((d) => d.code === pathname.split("/").join("")) ?? data[0],
   });
 
   return (
@@ -35,8 +43,10 @@ const HeroDropdown = () => {
             }}
             key={i}
           >
-            <Image src={data.flag} alt={`${data.code} flag`} className={s.flag} />
-            {data.code}
+            <Link href={`/${data.code}`} className={s.itemLink}>
+              <Image src={data.flag} alt={`${data.code} flag`} className={s.flag} />
+              {data.code}
+            </Link>
           </li>
         ))}
       </ul>

@@ -1,4 +1,4 @@
-import s from "./styles/page.module.scss";
+import s from "./page.module.scss";
 import About from "./home/about";
 import Contact from "./home/contact";
 import Footer from "./home/footer";
