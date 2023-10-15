@@ -11,13 +11,13 @@ const Section = (props: Props) => {
   const { title, subtitle, children } = props;
 
   return (
-    <div className={s.main}>
+    <section className={s.main}>
       <header className={s.header}>
         <h2 className={s.title}>{title}</h2>
         <p className={s.subtitle}>{subtitle}</p>
       </header>
       <div className={s.content}>{children}</div>
-    </div>
+    </section>
   );
 };
 
