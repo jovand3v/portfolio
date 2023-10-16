@@ -16,28 +16,30 @@ import GitIcon from "@/public/icons/technologies/git.svg";
 import RestIcon from "@/public/icons/technologies/rest.svg";
 import ArrowIcon from "@/public/icons/arrow.svg";
 import BgDecal from "@/public/background-decals/bg-decal-1.svg";
+import { useTranslations } from "next-intl";
 
 const About = () => {
+  const t = useTranslations("About");
   return (
     <div className={s.main}>
       <div className={s.exp}>
-        <h3 className={s.expTitle}>Experience</h3>
+        <h3 className={s.expTitle}>{t("sub_section.title")}</h3>
         <ul className={s.expList}>
           <li className={s.expItem}>
-            <span className={s.expItemDate}>JAN 2021 - MARCH 2022</span>
-            <span className={s.expItemTitle}>Front-end Developer • Freelance</span>
+            <span className={s.expItemDate}>{t("sub_section.experiences.exp1.date")}</span>
+            <span className={s.expItemTitle}>{t("sub_section.experiences.exp1.name")}</span>
           </li>
           <li className={s.expItem}>
-            <span className={s.expItemDate}>MARCH 2022 - NOV 2022</span>
-            <span className={s.expItemTitle}>Full-stack Developer • Nephalum Ltd.</span>
+            <span className={s.expItemDate}>{t("sub_section.experiences.exp2.date")}</span>
+            <span className={s.expItemTitle}>{t("sub_section.experiences.exp2.name")}</span>
           </li>
           <li className={s.expItem}>
-            <span className={s.expItemDate}>APRIL 2023 - SEP 2023</span>
-            <span className={s.expItemTitle}>Front-end Developer • Nephalum Ltd.</span>
+            <span className={s.expItemDate}>{t("sub_section.experiences.exp3.date")}</span>
+            <span className={s.expItemTitle}>{t("sub_section.experiences.exp3.name")}</span>
           </li>
         </ul>
         <button className={s.expBtn}>
-          Learn more <ArrowIcon className={s.expBtnArrowIcon} />
+          {t("sub_section.button")} <ArrowIcon className={s.expBtnArrowIcon} />
         </button>
       </div>
       <ul className={s.skills}>

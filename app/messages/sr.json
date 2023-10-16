@@ -2,9 +2,70 @@
   "Hero": {
     "header": {
       "profession": "Front-end Programer",
-      "description": "Zdravo, ja sam Jovan Ilić. Ja sam front-end programer, iz Srbije, sa back-end iskustvom i strašću za dizajnom. Istražite moj portfolio ili preuzmite moj životopis da biste saznali više."
+      "description": "Zdravo, zovem se Jovan Ilić. Ja sam front-end programer, iz Srbije, sa iskustvom u back-end programiranju i strašću za dizajn. Istraži moj portfolio ili preuzmi moj rezime da saznaš više."
     },
     "buttons": { "resume": "Rezime" },
-    "nav": { "explore": "Istrazi", "about": "O meni", "work": "Posao", "contact": "Kontakt" }
+    "nav": { "explore": "Istraži", "about": "O meni", "work": "Rad", "contact": "Kontakt" }
+  },
+  "About": {
+    "header": {
+      "title": "O meni",
+      "subtitle": "Iskustvo i veštine"
+    },
+    "sub_section": {
+      "title": "Iskustvo",
+      "experiences": {
+        "exp1": { "date": "JAN 2021 - MART 2022", "name": "Front-end Programer • Frilens" },
+        "exp2": { "date": "MART 2022 - NOV 2022", "name": "Full-stack Programer • Nephalum Ltd." },
+        "exp3": { "date": "APRIL 2023 - SEP 2023", "name": "Front-end Programer • Nephalum Ltd." }
+      },
+      "button": "Saznaj više"
+    }
+  },
+  "Work": {
+    "header": {
+      "title": "Rad",
+      "subtitle": "Lični i poslovni projekti"
+    },
+    "projects": {
+      "pherra": {
+        "subtitle": "2023 - Dizajnirao i programirao",
+        "description": "PHERRA je lični full-stack projekat e-trgovine sa posebno pravljenim cms-om kojem se može pristupiti putem /admin rute. PHERRA je hostovana na Vercel-u i napravljena koristeći: Next.js, TypeScript, SCSS, JWT, Prisma, Vercel Postgres Database, AWS S3 Bucket, i Figma."
+      },
+      "portfolio": {
+        "subtitle": "2023 - Dizajnirao i programirao",
+        "description": "PORTFOLIO je lični projekat za predstavljanje mog rada, veština i iskustva. Hostovan je na Vercel-u i napravljen koristeći: Next.js, TypeScript, SCSS, i Figma."
+      },
+      "mashdapp": {
+        "subtitle": "2022 - Parcijalno dizajnirao i programirao",
+        "description": "MASHDAPP je poslovni full-stack projekat za izmenjivanje/kombinovanje NFT-ova. Na njemu je radio tim od 3. Moj deo posla je bio front-end programiranje, hostovanje, manje korigovanje dizajna, kao i manji delovi back-enda kao što je npr. kontakt forma. MASHDAPP je hostovan na Heroku-u i napravljen koristeći(sa moje strane): React, Express, SCSS, Mailgun, Blockfrost, i Figma. Na poslednjih par slika može se videti MASHDAPP Editor čija je proizvodnja prekinuta, a samim ti i njegovo izlaženje u produkciju."
+      },
+      "keeptrack": {
+        "subtitle": "2021 - Dizajnirao i programirao",
+        "description": "KEEPTRACK je lični front-end projekat za praćenje nutrijenata. Hostovan je na Netlify-u i napravljen koristeći: React, Redux, SCSS, chart.js, i Figma. Projekat je inicijalno napravljen za personalno korišćenje, ali bih kasnije odlučio da ga redizajniram, brendiram, i stavim kao jedan od svojih projekata za prikaz iako je napravljen 2021. godine."
+      }
+    },
+    "buttons": { "viewLive": "Pogledaj uživo", "code": "Kod", "private": "Privatno" }
+  },
+  "Contact": {
+    "header": {
+      "title": "Kontakt",
+      "subtitle": "Hajde da popričamo"
+    },
+    "sub_section": {
+      "title": "Stupi u kontakt",
+      "subtitle": "Putem mreža ili kontakt forme",
+      "description": "Slobodno me kontaktiraj u bilo koje vreme. Odgovoriću čim budem bio u mogućnosti."
+    },
+    "form": {
+      "firstName": "Ime",
+      "lastName": "Prezime",
+      "email": "E-mail",
+      "message": "Poruka",
+      "button": "Pošalji"
+    }
+  },
+  "Footer": {
+    "copyright": "Prava zadržana © 2023 Jovan Ilic"
   }
 }

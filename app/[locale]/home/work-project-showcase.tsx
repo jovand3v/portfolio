@@ -16,10 +16,11 @@ type Props = {
   githubLink: Url | null;
   reverse?: boolean;
   images: StaticImageData[];
+  buttons: { viewLive: string; code: string; private: string };
 };
 
 const WorkProjectShowcase = (props: Props) => {
-  const { title, subtitle, description, liveLink, githubLink, reverse, images } = props;
+  const { title, subtitle, description, liveLink, githubLink, reverse, images, buttons } = props;
   const [selected, setSelected] = useState<StaticImageData>(images[0]);
   const [fullscreen, setFullscreen] = useState(false);
 
@@ -34,18 +35,18 @@ const WorkProjectShowcase = (props: Props) => {
         <div className={s.btns}>
           <Link href={liveLink} target="_blank" className={s.btnLinkWrapper}>
             <button className={s.btn}>
-              View Live <EyeIcon className={s.btnIcon} />
+              {buttons.viewLive} <EyeIcon className={s.btnIcon} />
             </button>
           </Link>
           {githubLink ? (
             <Link href={githubLink} target="_blank" className={s.btnLinkWrapper}>
               <button className={s.btn}>
-                Code <CodeIcon className={s.btnIcon} />
+                {buttons.code} <CodeIcon className={s.btnIcon} />
               </button>
             </Link>
           ) : (
             <button className={`${s.btn} ${s.btnDisabled}`} disabled={true}>
-              Private <CodeIcon className={s.btnIcon} />
+              {buttons.private} <CodeIcon className={s.btnIcon} />
             </button>
           )}
         </div>

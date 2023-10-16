@@ -1,7 +1,9 @@
 import s from "./footer.module.scss";
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
-  return <div className={s.main}>Copyright &copy; 2023 Jovan Ilić</div>;
+  const t = useTranslations("Footer");
+  return <div className={s.main}>{t("copyright")}</div>;
 };
 
 export default Footer;

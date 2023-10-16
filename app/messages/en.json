@@ -6,5 +6,66 @@
     },
     "buttons": { "resume": "Rezime" },
     "nav": { "explore": "Explore", "about": "About", "work": "Work", "contact": "Contact" }
+  },
+  "About": {
+    "header": {
+      "title": "About",
+      "subtitle": "Experience & Skills"
+    },
+    "sub_section": {
+      "title": "Experience",
+      "experiences": {
+        "exp1": { "date": "JAN 2021 - MARCH 2022", "name": "Front-end Developer • Freelance" },
+        "exp2": { "date": "MARCH 2022 - NOV 2022", "name": "Full-stack Developer • Nephalum Ltd." },
+        "exp3": { "date": "APRIL 2023 - SEP 2023", "name": "Front-end Developer • Nephalum Ltd." }
+      },
+      "button": "Learn more"
+    }
+  },
+  "Work": {
+    "header": {
+      "title": "Work",
+      "subtitle": "Personal & Work Projects"
+    },
+    "projects": {
+      "pherra": {
+        "subtitle": "2023 - Designed & Coded",
+        "description": "PHERRA is a personal full-stack, e-commerce project with a custom built cms that can be accessed via the /admin route. PHERRA is hosted on Vercel and was built using: Next.js, TypeScript, SCSS, JWT, Prisma, Vercel Postgres Database, AWS S3 Bucket, and Figma."
+      },
+      "portfolio": {
+        "subtitle": "2023 - Designed & Coded",
+        "description": "PORTFOLIO is a personal project used for representation of my work, skills and experiences. It's hosted on Vercel and was built using: Next.js, TypeScript, SCSS and Figma."
+      },
+      "mashdapp": {
+        "subtitle": "2022 - Partially Designed & Coded",
+        "description": "MASHDAPP is a work full-stack project made for customizing/combining NFTs. It was built by a team of 3. I've handled all of the front-end, hosting, some design tweaks, and some back-end such as the contact us form. MASHDAPP is hosted on Heroku and built(my side) using: React, Express, SCSS, Mailgun, Blockfrost, and Figma. On the last few images a MASHDAPP Editor can be seen that got discontinued and therefore never made it to production."
+      },
+      "keeptrack": {
+        "subtitle": "2021 - Designed & Coded",
+        "description": "KEEPTRACK is a personal front-end, nutrition tracking project. It's hosted on Netlify and was built using: React, Redux, SCSS, chart.js, and Figma. This project was initially built for personal use only but later I've decided to re-design it, brand it, and put it as one of my projects even if it was built in 2021."
+      }
+    },
+    "buttons": { "viewLive": "View Live", "code": "Code", "private": "Private" }
+  },
+  "Contact": {
+    "header": {
+      "title": "Contact",
+      "subtitle": "Let's talk"
+    },
+    "sub_section": {
+      "title": "Get in touch",
+      "subtitle": "Via socials or the contact form",
+      "description": "Feel free to contact me at any time, I'll respond as soon as possible."
+    },
+    "form": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "E-mail",
+      "message": "Message",
+      "button": "Submit"
+    }
+  },
+  "Footer": {
+    "copyright": "Copyright © 2023 Jovan Ilic"
   }
 }
