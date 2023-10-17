@@ -4,7 +4,7 @@
       "profession": "Front-end Developer",
       "description": "Hi, my name is Jovan Ilić. I'm a front-end developer, from Serbia, with back-end experience and a passion for design. Explore my portfolio or download my resume to learn more."
     },
-    "buttons": { "resume": "Rezime" },
+    "buttons": { "resume": "Resume" },
     "nav": { "explore": "Explore", "about": "About", "work": "Work", "contact": "Contact" }
   },
   "About": {
