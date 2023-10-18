@@ -103,3 +103,33 @@
   color: rgb(107, 107, 107);
   cursor: not-allowed;
 }
+
+@media screen and (max-width: 1920px) {
+  .container {
+    width: clamp(600px, 43vw, 825px);
+  }
+  .mainImgContainer {
+    height: clamp(300px, 22.4vw, 430px);
+  }
+  .list {
+    margin-top: clamp(10px, 1.1vw, 20px);
+  }
+  .item {
+    min-width: clamp(165px, 9.5vw, 180px);
+  }
+  .mainFullscreen {
+    .fullscreenMainContainer {
+      gap: clamp(25px, 1.6vw, 30px);
+    }
+    .mainImgContainer {
+      width: clamp(850px, 62.5vw, 1200px);
+      height: clamp(450px, 31.3vw, 600px);
+    }
+    .list {
+      width: clamp(850px, 62.5vw, 1200px);
+    }
+  }
+  .arrowIcon {
+    width: clamp(35px, 2.1vw, 40px);
+  }
+}

@@ -50,3 +50,11 @@
   width: 18px;
   height: auto;
 }
+@media screen and (max-width: 1920px) {
+  .main {
+    gap: clamp(60px, 5.3vw, 100px);
+  }
+  .description {
+    margin: clamp(40px, 2.6vw, 50px) 0px;
+  }
+}

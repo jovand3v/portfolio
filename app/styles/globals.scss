@@ -56,3 +56,20 @@ body {
   z-index: -1;
   color: var(--bg-decal-color);
 }
+
+@media screen and (max-width: 1920px) {
+  :root {
+    --section-margin: clamp(140px, 9.4vw, 180px);
+    --body-padding: clamp(45px, 3.2vw, 60px);
+    --fs-section-title: clamp(125px, 8.1vw, 155px);
+    --fs-section-subtitle: clamp(28px, 1.7vw, 32px);
+    --fs-subsection-title: clamp(58px, 3.8vw, 72px);
+    --fs-subsection-subtitle: clamp(20px, 1.1vw, 21px);
+    // --paragraph-line-height: 160%;
+  }
+}
+@media screen and (max-width: 1500px) {
+  :root {
+    --section-padding: calc(1.5 * var(--body-padding));
+  }
+}

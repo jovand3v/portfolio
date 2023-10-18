@@ -24,3 +24,8 @@
 .content {
   margin-top: var(--section-margin);
 }
+@media screen and (max-width: 1920px) {
+  .header {
+    gap: clamp(25px, 1.6vw, 30px);
+  }
+}

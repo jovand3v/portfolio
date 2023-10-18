@@ -3,3 +3,8 @@
   margin-bottom: 20px;
   text-transform: uppercase;
 }
+@media screen and (max-width: 1920px) {
+  .main {
+    margin-bottom: clamp(15px, 0.9vw, 20px);
+  }
+}

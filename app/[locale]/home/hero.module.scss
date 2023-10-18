@@ -4,6 +4,8 @@
   padding: var(--body-padding);
   display: flex;
   flex-direction: column;
+  min-height: 800px;
+  position: relative;
 }
 .title {
   font-size: 240px;
@@ -15,6 +17,7 @@
 .profession {
   margin-top: 25px;
   font-size: 78px;
+  line-height: 0.9;
   text-transform: uppercase;
 }
 .bottom {
@@ -113,5 +116,38 @@
   }
   100% {
     transform: translateY(25%);
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .main {
+    min-height: clamp(720px, 42vw, 800px);
+  }
+  .title {
+    font-size: clamp(200px, 12.5vw, 240px);
+  }
+  .profession {
+    margin-top: clamp(17px, 1.3vw, 25px);
+    font-size: clamp(64px, 4.1vw, 78px);
+  }
+  .description {
+    margin: clamp(40px, 3.2vw, 60px) 0px;
+    width: clamp(510px, 29vw, 550px);
+  }
+  .socialResume {
+    margin-left: clamp(20px, 1.3vw, 25px);
+  }
+  .navTitle {
+    gap: clamp(10px, 0.8vw, 15px);
+    font-size: clamp(25px, 1.6vw, 30px);
+  }
+  .navTitleLine {
+    width: clamp(25px, 1.6vw, 30px);
+  }
+  .navList {
+    gap: clamp(20px, 1.3vw, 25px);
+  }
+  .exploreIcon {
+    width: clamp(12px, 0.7vw, 13px);
   }
 }

@@ -71,3 +71,27 @@
   right: 0px;
   top: 30%;
 }
+@media screen and (max-width: 1920px) {
+  .title {
+    font-size: clamp(75px, 5.3vw, 100px);
+  }
+  .subtitle {
+    font-size: clamp(25px, 1.6vw, 30px);
+  }
+  .description {
+    margin: clamp(40px, 2.6vw, 50px) 0px;
+  }
+  .form {
+    width: clamp(340px, 19.3vw, 370px);
+    gap: clamp(10px, 0.8vw, 15px);
+  }
+  .nameInputContainer {
+    gap: clamp(10px, 0.8vw, 15px);
+  }
+  .messageInput {
+    height: clamp(230px, 13.1vw, 250px);
+  }
+  .formBtn {
+    width: clamp(110px, 6.5vw, 125px);
+  }
+}

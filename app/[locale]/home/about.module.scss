@@ -66,3 +66,29 @@
   right: 0px;
   top: 50%;
 }
+@media screen and (max-width: 1920px) {
+  .expList {
+    margin: clamp(40px, 3.2vw, 60px) 0px;
+    gap: clamp(20px, 1.2vw, 22px);
+  }
+  .expItemTitle {
+    font-size: clamp(17px, 1vw, 18px);
+  }
+  .expBtn {
+    font-size: clamp(17px, 1vw, 18px);
+    gap: clamp(12px, 0.8vw, 15px);
+  }
+  .expBtnArrowIcon {
+    height: clamp(18px, 1vw, 19px);
+  }
+  .skills {
+    gap: clamp(30px, 2.4vw, 46px);
+  }
+  .skill {
+    gap: clamp(18px, 1.2vw, 22px);
+  }
+  .skillIcon {
+    width: clamp(49px, 3vw, 56px);
+    height: clamp(49px, 3vw, 56px);
+  }
+}
