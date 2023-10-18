@@ -95,3 +95,36 @@
     width: clamp(110px, 6.5vw, 125px);
   }
 }
+@media screen and (max-width: 1280px) {
+  .main {
+    flex-direction: column;
+    gap: var(--section-margin);
+  }
+  .textContainer {
+    text-align: center;
+  }
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(15px, 1.6vw, 20px);
+  }
+  .socialIcon {
+    height: clamp(28px, 2.5vw, 31px);
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .title {
+    font-size: clamp(60px, 5.9vw, 75px);
+  }
+  .subtitle {
+    font-size: var(--fs-subsection-subtitle);
+    display: block;
+    margin-top: -1px;
+    line-height: 1;
+  }
+}

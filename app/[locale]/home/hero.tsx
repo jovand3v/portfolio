@@ -16,7 +16,7 @@ const Hero = () => {
       <h1 className={s.title}>
         Jovan Ilić <span className={s.profession}>{t("header.profession")}</span>
       </h1>
-      <div className={s.bottom}>
+      <div className={s.aboutContainer}>
         <div className={s.descriptionAndSocialsContainer}>
           <p className={s.description}>{t("header.description")}</p>
           <ul className={s.socials}>

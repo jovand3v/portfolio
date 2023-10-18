@@ -133,3 +133,21 @@
     width: clamp(35px, 2.1vw, 40px);
   }
 }
+@media screen and (max-width: 1280px) {
+  .container {
+    width: clamp(570px, 57.8vw, 740px);
+  }
+  .mainImgContainer {
+    height: clamp(274px, 28.9vw, 370px);
+    pointer-events: none;
+  }
+  .item {
+    min-width: clamp(150px, 12.9vw, 165px);
+    height: clamp(80px, 7vw, 90px);
+  }
+}
+@media screen and (max-width: 630px) {
+  .container {
+    width: calc(100vw - (2 * var(--body-padding)));
+  }
+}

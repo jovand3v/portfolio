@@ -20,7 +20,7 @@
   line-height: 0.9;
   text-transform: uppercase;
 }
-.bottom {
+.aboutContainer {
   display: flex;
   justify-content: space-between;
   flex: 1 1;
@@ -149,5 +149,57 @@
   }
   .exploreIcon {
     width: clamp(12px, 0.7vw, 13px);
+  }
+}
+@media screen and (max-width: 1280px) {
+  .main {
+    height: 100%;
+    min-height: 100vh;
+  }
+  .aboutContainer {
+    flex-direction: column;
+  }
+  .title {
+    font-size: clamp(90px, 14.8vw, 200px);
+  }
+  .profession {
+    margin-top: clamp(14px, 1.4vw, 17px);
+    font-size: clamp(37px, 5vw, 64px);
+  }
+  .description {
+    width: clamp(500px, 43vw, 550px);
+    font-size: clamp(15px, 1.3vw, 16px);
+  }
+  .socialResume {
+    font-size: clamp(15px, 1.3vw, 16px);
+    margin-left: clamp(10px, 1.6vw, 20px);
+  }
+  .navTitle {
+    font-size: clamp(22px, 2vw, 25px);
+    margin-bottom: clamp(18px, 2vw, 25px);
+  }
+  .navTitleLine {
+    width: clamp(20px, 2vw, 25px);
+    height: clamp(2px, 0.3vw, 3px);
+  }
+  .navList {
+    gap: clamp(15px, 1.6vw, 20px);
+  }
+  .exploreIcon {
+    width: clamp(11px, 1vw, 12px);
+  }
+  .socials {
+    gap: clamp(15px, 1.6vw, 20px);
+  }
+  .socialIcon {
+    height: clamp(28px, 2.5vw, 31px);
+  }
+  .resumeIcon {
+    height: clamp(35px, 3.2vw, 40px);
+  }
+}
+@media screen and (max-width: 500px) {
+  .description {
+    width: 100%;
   }
 }

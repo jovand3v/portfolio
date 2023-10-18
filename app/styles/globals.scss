@@ -65,11 +65,19 @@ body {
     --fs-section-subtitle: clamp(28px, 1.7vw, 32px);
     --fs-subsection-title: clamp(58px, 3.8vw, 72px);
     --fs-subsection-subtitle: clamp(20px, 1.1vw, 21px);
-    // --paragraph-line-height: 160%;
   }
 }
 @media screen and (max-width: 1500px) {
   :root {
     --section-padding: calc(1.5 * var(--body-padding));
+  }
+}
+@media screen and (max-width: 1280px) {
+  :root {
+    --section-margin: clamp(80px, 8.7vw, 110px);
+    --body-padding: clamp(30px, 3.6vw, 45px);
+    --fs-section-title: clamp(80px, 9.8vw, 125px);
+    --fs-section-subtitle: clamp(24px, 2.2vw, 28px);
+    --fs-subsection-title: clamp(50px, 4.6vw, 58px);
   }
 }

@@ -8,3 +8,8 @@
     margin-bottom: clamp(15px, 0.9vw, 20px);
   }
 }
+@media screen and (max-width: 1280px) {
+  .main {
+    font-size: clamp(15px, 1.3vw, 16px);
+  }
+}
