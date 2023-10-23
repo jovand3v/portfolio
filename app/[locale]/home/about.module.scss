@@ -131,3 +131,10 @@
     height: clamp(44px, 3.9vw, 49px);
   }
 }
+@media screen and (max-width: 600px) {
+  .skills {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}

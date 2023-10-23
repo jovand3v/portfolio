@@ -11,13 +11,13 @@
 }
 .title {
   font-size: var(--fs-subsection-title);
-  line-height: var(--subsection-title-line-height);
+  line-height: 1.2;
 }
 .subtitle {
   color: var(--foreground-color-secondary);
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 0.8;
+  line-height: 1;
   font-size: var(--fs-subsection-subtitle);
 }
 .description {
@@ -75,7 +75,30 @@
   }
 }
 @media screen and (max-width: 630px) {
+  .title {
+    line-height: 1;
+  }
   .content {
     width: 95%;
+  }
+  .subtitle {
+    margin-top: 8px;
+  }
+  .btns {
+    display: flex;
+    gap: 10px;
+  }
+  .btn {
+    padding: 0px clamp(12px, 2.4vw, 15px);
+    height: clamp(47px, 7.9vw, 50px);
+    font-size: clamp(14px, 2.4vw, 15px);
+  }
+  .btnIcon {
+    width: 17px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .subtitle {
+    margin-top: 10px;
   }
 }

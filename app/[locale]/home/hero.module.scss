@@ -14,11 +14,17 @@
   line-height: 0.75;
   font-weight: 700;
 }
-.profession {
+.professionContainerMobile {
+  display: flex;
   margin-top: 25px;
+}
+.profession {
   font-size: 78px;
   line-height: 0.9;
   text-transform: uppercase;
+}
+.professionBr {
+  display: none;
 }
 .aboutContainer {
   display: flex;
@@ -65,12 +71,12 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  font-size: 30px;
+  font-size: var(--fs-section-subtitle);
   text-transform: uppercase;
   font-weight: 700;
   color: var(--foreground-color-secondary);
   margin-bottom: 25px;
-  line-height: 0.7;
+  line-height: 1;
 }
 .navTitleLine {
   width: 30px;
@@ -126,8 +132,10 @@
   .title {
     font-size: clamp(200px, 12.5vw, 240px);
   }
-  .profession {
+  .professionContainerMobile {
     margin-top: clamp(17px, 1.3vw, 25px);
+  }
+  .profession {
     font-size: clamp(64px, 4.1vw, 78px);
   }
   .description {
@@ -139,7 +147,7 @@
   }
   .navTitle {
     gap: clamp(10px, 0.8vw, 15px);
-    font-size: clamp(25px, 1.6vw, 30px);
+    margin-bottom: clamp(20px, 1.3vw, 25px);
   }
   .navTitleLine {
     width: clamp(25px, 1.6vw, 30px);
@@ -162,8 +170,10 @@
   .title {
     font-size: clamp(90px, 14.8vw, 200px);
   }
-  .profession {
+  .professionContainerMobile {
     margin-top: clamp(14px, 1.4vw, 17px);
+  }
+  .profession {
     font-size: clamp(37px, 5vw, 64px);
   }
   .description {
@@ -175,8 +185,7 @@
     margin-left: clamp(10px, 1.6vw, 20px);
   }
   .navTitle {
-    font-size: clamp(22px, 2vw, 25px);
-    margin-bottom: clamp(18px, 2vw, 25px);
+    margin-bottom: clamp(18px, 1.6vw, 20px);
   }
   .navTitleLine {
     width: clamp(20px, 2vw, 25px);
@@ -198,8 +207,45 @@
     height: clamp(35px, 3.2vw, 40px);
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: clamp(77px, 17.2vw, 110px);
+    margin-top: clamp(5px, 1.6vw, 10px);
+  }
+  .professionContainerMobile {
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+  }
+  .profession {
+    font-size: clamp(30px, 6.7vw, 40px);
+  }
+  .professionBr {
+    display: block;
+  }
   .description {
     width: 100%;
+  }
+  .socialIcon {
+    height: clamp(28px, 5.2vw, 31px);
+  }
+  .resumeIcon {
+    height: clamp(35px, 6.7vw, 40px);
+  }
+  .nav {
+    padding-top: 40px;
+  }
+  .navTitleLine {
+    width: clamp(15px, 3.3vw, 20px);
+  }
+}
+@media screen and (max-width: 500px) {
+  .exploreIcon {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  .title {
+    font-size: clamp(63px, 16.6vw, 77px);
   }
 }

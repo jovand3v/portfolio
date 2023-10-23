@@ -14,7 +14,14 @@ const Hero = () => {
   return (
     <header className={s.main}>
       <h1 className={s.title}>
-        Jovan Ilić <span className={s.profession}>{t("header.profession")}</span>
+        Jovan Ilić
+        <div className={s.professionContainerMobile}>
+          <span className={s.profession}>
+            Front-end <br className={s.professionBr} />
+            {t("header.profession")}
+          </span>
+          <HeroDropdown />
+        </div>
       </h1>
       <div className={s.aboutContainer}>
         <div className={s.descriptionAndSocialsContainer}>
@@ -56,7 +63,6 @@ const Hero = () => {
         </nav>
       </div>
       <ArrowIcon className={s.exploreIcon} />
-      <HeroDropdown />
       <BgDecal className={`bgDecal ${s.bgDecal}`} />
     </header>
   );

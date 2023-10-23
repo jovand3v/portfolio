@@ -11,7 +11,6 @@
   --fs-subsection-title: 72px;
   --fs-subsection-subtitle: 21px;
   --paragraph-line-height: 160%;
-  --subsection-title-line-height: 1.2;
 }
 * {
   padding: 0px;
@@ -76,8 +75,17 @@ body {
   :root {
     --section-margin: clamp(80px, 8.7vw, 110px);
     --body-padding: clamp(30px, 3.6vw, 45px);
+    --section-padding: var(--body-padding);
     --fs-section-title: clamp(80px, 9.8vw, 125px);
     --fs-section-subtitle: clamp(24px, 2.2vw, 28px);
     --fs-subsection-title: clamp(50px, 4.6vw, 58px);
+  }
+}
+@media screen and (max-width: 600px) {
+  :root {
+    --section-margin: clamp(60px, 13.4vw, 80px);
+    --fs-section-title: clamp(60px, 14.2vw, 85px);
+    --fs-section-subtitle: clamp(21px, 4vw, 24px);
+    --fs-subsection-title: clamp(44px, 8.4vw, 50px);
   }
 }

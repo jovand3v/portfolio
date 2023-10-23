@@ -5,7 +5,7 @@
 }
 .title {
   font-size: 100px;
-  line-height: var(--subsection-title-line-height);
+  line-height: 1.2;
   text-transform: uppercase;
 }
 .subtitle {
@@ -119,12 +119,38 @@
     align-items: center;
   }
   .title {
-    font-size: clamp(60px, 5.9vw, 75px);
+    font-size: clamp(57px, 5.9vw, 75px);
   }
   .subtitle {
     font-size: var(--fs-subsection-subtitle);
     display: block;
     margin-top: -1px;
     line-height: 1;
+  }
+}
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: clamp(50px, 9.6vw, 57px);
+    line-height: 1;
+  }
+  .subtitle {
+    margin-top: 10px;
+  }
+  .description {
+    font-size: clamp(15px, 2.7vw, 16px);
+  }
+  .form {
+    width: clamp(300px, 56.7vw, 340px);
+  }
+  .input {
+    height: clamp(47px, 8.4vw, 50px);
+    font-size: clamp(14px, 2.5vw, 15px);
+  }
+  .messageInput {
+    height: 230px;
+  }
+  .formBtn {
+    height: clamp(47px, 8.4vw, 50px);
+    font-size: clamp(14px, 2.5vw, 15px);
   }
 }
