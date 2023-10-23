@@ -154,3 +154,11 @@
     font-size: clamp(14px, 2.5vw, 15px);
   }
 }
+@media screen and (max-width: 380px) {
+  .title {
+    font-size: clamp(45px, 13.2vw, 50px);
+  }
+  .form {
+    width: clamp(270px, 79vw, 300px);
+  }
+}

@@ -123,7 +123,7 @@
     gap: clamp(25px, 2.4vw, 30px);
   }
   .skill {
-    gap: clamp(13px, 1.5vw, 18px);
+    gap: clamp(15px, 1.5vw, 18px);
     font-size: clamp(15px, 1.3vw, 16px);
   }
   .skillIcon {
@@ -136,5 +136,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 20px;
+  }
+  .skillIcon {
+    width: clamp(42px, 7.4vw, 44px);
+    height: clamp(42px, 7.4vw, 44px);
   }
 }

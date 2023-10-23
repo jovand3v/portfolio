@@ -60,20 +60,20 @@ const About = () => {
           <span className={s.skillName}>SQL</span>
         </li>
         <li className={s.skill}>
-          <NextJsIcon className={s.skillIcon} />
-          <span className={s.skillName}>NextJS</span>
+          <ExpressIcon className={s.skillIcon} />
+          <span className={s.skillName}>Express</span>
         </li>
         <li className={s.skill}>
-          <TypeScriptIcon className={s.skillIcon} />
-          <span className={s.skillName}>TypeScript</span>
+          <NextJsIcon className={s.skillIcon} />
+          <span className={s.skillName}>NextJS</span>
         </li>
         <li className={s.skill}>
           <NodeJsIcon className={s.skillIcon} />
           <span className={s.skillName}>NodeJS</span>
         </li>
         <li className={s.skill}>
-          <ExpressIcon className={s.skillIcon} />
-          <span className={s.skillName}>Express</span>
+          <TypeScriptIcon className={s.skillIcon} />
+          <span className={s.skillName}>TypeScript</span>
         </li>
         <li className={s.skill}>
           <FigmaIcon className={s.skillIcon} />

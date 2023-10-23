@@ -89,3 +89,11 @@ body {
     --fs-subsection-title: clamp(44px, 8.4vw, 50px);
   }
 }
+@media screen and (max-width: 380px) {
+  :root {
+    --body-padding: clamp(20px, 7.9vw, 30px);
+    --fs-section-title: clamp(52px, 15.8vw, 60px);
+    --fs-section-subtitle: clamp(20px, 5.6vw, 21px);
+    --fs-subsection-title: clamp(40px, 11.6vw, 44px);
+  }
+}
