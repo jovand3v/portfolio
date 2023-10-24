@@ -1,8 +1,9 @@
 import s from "./contact.module.scss";
 import GithubIcon from "@/public/icons/github.svg";
 import LinkedInIcon from "@/public/icons/linked-in.svg";
-import BgDecal from "@/public/background-decals/bg-decal-1.svg";
+import bgDecal from "@/public/background-decals/bg-decal-1.png";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 const Contact = () => {
   const t = useTranslations("Contact");
@@ -29,7 +30,7 @@ const Contact = () => {
         <textarea className={`${s.input} ${s.messageInput}`} placeholder={t("form.message")} />
         <button className={s.formBtn}>{t("form.button")}</button>
       </form>
-      <BgDecal className={`bgDecal ${s.bgDecal}`} />
+      <Image src={bgDecal} alt="" className={`bgDecal ${s.bgDecal}`} quality={100} />
     </div>
   );
 };

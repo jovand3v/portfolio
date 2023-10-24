@@ -1,10 +1,11 @@
 import Link from "next/link";
+import Image from "next/image";
 import s from "./hero.module.scss";
 import LinkedInIcon from "@/public/icons/linked-in.svg";
 import GithubIcon from "@/public/icons/github.svg";
 import ResumeDownloadIcon from "@/public/icons/resume-download.svg";
 import ArrowIcon from "@/public/icons/arrow.svg";
-import BgDecal from "@/public/background-decals/bg-decal-1.svg";
+import bgDecal from "@/public/background-decals/bg-decal-1.png";
 import HeroDropdown from "./hero-dropdown";
 import { useTranslations } from "next-intl";
 
@@ -63,7 +64,7 @@ const Hero = () => {
         </nav>
       </div>
       <ArrowIcon className={s.exploreIcon} />
-      <BgDecal className={`bgDecal ${s.bgDecal}`} />
+      <Image src={bgDecal} className={`bgDecal ${s.bgDecal}`} quality={100} alt="" />
     </header>
   );
 };

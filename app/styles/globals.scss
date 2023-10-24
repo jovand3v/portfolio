@@ -50,8 +50,8 @@ body {
 .bgDecal {
   position: absolute;
   overflow: visible;
-  height: 100vh;
-  width: auto;
+  width: 800px;
+  height: auto;
   z-index: -1;
   color: var(--bg-decal-color);
 }
@@ -64,6 +64,9 @@ body {
     --fs-section-subtitle: clamp(28px, 1.7vw, 32px);
     --fs-subsection-title: clamp(58px, 3.8vw, 72px);
     --fs-subsection-subtitle: clamp(20px, 1.1vw, 21px);
+  }
+  .bgDecal {
+    width: clamp(700px, 41.7vw, 800px);
   }
 }
 @media screen and (max-width: 1500px) {
@@ -80,6 +83,9 @@ body {
     --fs-section-subtitle: clamp(24px, 2.2vw, 28px);
     --fs-subsection-title: clamp(50px, 4.6vw, 58px);
   }
+  .bgDecal {
+    width: clamp(500px, 54.7vw, 700px);
+  }
 }
 @media screen and (max-width: 600px) {
   :root {
@@ -87,6 +93,9 @@ body {
     --fs-section-title: clamp(60px, 14.2vw, 85px);
     --fs-section-subtitle: clamp(21px, 4vw, 24px);
     --fs-subsection-title: clamp(44px, 8.4vw, 50px);
+  }
+  .bgDecal {
+    width: clamp(450px, 83.3vw, 500px);
   }
 }
 @media screen and (max-width: 380px) {

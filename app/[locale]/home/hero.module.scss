@@ -112,8 +112,8 @@
 .bgDecal {
   overflow: hidden;
   left: 0px;
-  transform: rotate(180deg) translateY(60%);
-  top: 50%;
+  transform: rotate(180deg);
+  top: -50px;
 }
 
 @keyframes jump {

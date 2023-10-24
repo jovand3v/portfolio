@@ -1,8 +1,9 @@
 import WorkProjectShowcase from "./work-project-showcase";
 import s from "./work.module.scss";
-import BgDecal from "@/public/background-decals/bg-decal-1.svg";
+import bgDecal from "@/public/background-decals/bg-decal-1.png";
 import images from "./work-project-imgs";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 const Work = () => {
   const pherraT = useTranslations("Work.projects.pherra");
@@ -53,7 +54,7 @@ const Work = () => {
         reverse={false}
         buttons={{ viewLive: buttonsT("viewLive"), code: buttonsT("code"), private: buttonsT("private") }}
       />
-      <BgDecal className={`bgDecal ${s.bgDecal}`} />
+      <Image src={bgDecal} className={`bgDecal ${s.bgDecal}`} alt="" quality={100} />
     </div>
   );
 };
