@@ -16,7 +16,6 @@ import MashdappDiscontinued2 from "@/public/work/mashdapp-discontinued-2.png";
 import MashdappDiscontinued3 from "@/public/work/mashdapp-discontinued-3.png";
 import MashdappDiscontinued4 from "@/public/work/mashdapp-discontinued-4.png";
 import MashdappDiscontinued5 from "@/public/work/mashdapp-discontinued-5.png";
-import MashdappDiscontinued6 from "@/public/work/mashdapp-discontinued-6.png";
 import Pherra1 from "@/public/work/pherra-1.png";
 import Pherra2 from "@/public/work/pherra-2.png";
 import Pherra3 from "@/public/work/pherra-3.png";

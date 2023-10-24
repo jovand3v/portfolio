@@ -19,7 +19,6 @@ type Props = {
 };
 
 export default function RootLayout({ children, params: { locale } }: Props) {
-  // check if locale exists
   const isValidLocale = locales.some((l) => l === locale);
   if (!isValidLocale) notFound();
 

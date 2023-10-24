@@ -1,3 +1,4 @@
+"use client";
 import s from "./about.module.scss";
 import HtmlIcon from "@/public/icons/technologies/html.svg";
 import CssIcon from "@/public/icons/technologies/css.svg";
@@ -16,31 +17,42 @@ import GitIcon from "@/public/icons/technologies/git.svg";
 import RestIcon from "@/public/icons/technologies/rest.svg";
 import ArrowIcon from "@/public/icons/arrow.svg";
 import bgDecal from "@/public/background-decals/bg-decal-1.png";
-import { useTranslations } from "next-intl";
 import Image from "next/image";
+import useScroll from "@/app/hooks/useScroll";
 
-const About = () => {
-  const t = useTranslations("About");
+type Props = {
+  subsectionTitleT: string;
+  expT: {
+    exp1: { date: string; name: string };
+    exp2: { date: string; name: string };
+    exp3: { date: string; name: string };
+  };
+  btnT: string;
+};
+
+const About = (props: Props) => {
+  const { subsectionTitleT, expT, btnT } = props;
+
   return (
     <div className={s.main}>
       <div className={s.exp}>
-        <h3 className={s.expTitle}>{t("sub_section.title")}</h3>
+        <h3 className={s.expTitle}>{subsectionTitleT}</h3>
         <ul className={s.expList}>
           <li className={s.expItem}>
-            <span className={s.expItemDate}>{t("sub_section.experiences.exp1.date")}</span>
-            <span className={s.expItemTitle}>{t("sub_section.experiences.exp1.name")}</span>
+            <span className={s.expItemDate}>{expT.exp1.date}</span>
+            <span className={s.expItemTitle}>{expT.exp1.name}</span>
           </li>
           <li className={s.expItem}>
-            <span className={s.expItemDate}>{t("sub_section.experiences.exp2.date")}</span>
-            <span className={s.expItemTitle}>{t("sub_section.experiences.exp2.name")}</span>
+            <span className={s.expItemDate}>{expT.exp2.date}</span>
+            <span className={s.expItemTitle}>{expT.exp2.name}</span>
           </li>
           <li className={s.expItem}>
-            <span className={s.expItemDate}>{t("sub_section.experiences.exp3.date")}</span>
-            <span className={s.expItemTitle}>{t("sub_section.experiences.exp3.name")}</span>
+            <span className={s.expItemDate}>{expT.exp3.date}</span>
+            <span className={s.expItemTitle}>{expT.exp3.name}</span>
           </li>
         </ul>
-        <button className={s.expBtn}>
-          {t("sub_section.button")} <ArrowIcon className={s.expBtnArrowIcon} />
+        <button className={s.expBtn} onClick={() => useScroll("work")}>
+          {btnT} <ArrowIcon className={s.expBtnArrowIcon} />
         </button>
       </div>
       <ul className={s.skills}>

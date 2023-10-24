@@ -1,6 +1,5 @@
 .main {
-  margin: var(--section-margin) 0px;
-  padding: 0px var(--section-padding);
+  padding: var(--section-margin) var(--section-padding) 0px var(--section-padding);
   position: relative;
 }
 .header {
