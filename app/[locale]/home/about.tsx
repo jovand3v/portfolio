@@ -18,7 +18,6 @@ import RestIcon from "@/public/icons/technologies/rest.svg";
 import ArrowIcon from "@/public/icons/arrow.svg";
 import bgDecal from "@/public/background-decals/bg-decal-1.png";
 import Image from "next/image";
-import useScroll from "@/app/hooks/useScroll";
 
 type Props = {
   subsectionTitleT: string;
@@ -32,6 +31,12 @@ type Props = {
 
 const About = (props: Props) => {
   const { subsectionTitleT, expT, btnT } = props;
+
+  const handleScroll = (section: "about" | "work" | "contact") => {
+    const el = document.getElementById(`${section}`);
+    const y = el!.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({ top: y, behavior: "smooth" });
+  };
 
   return (
     <div className={s.main}>
@@ -51,7 +56,7 @@ const About = (props: Props) => {
             <span className={s.expItemTitle}>{expT.exp3.name}</span>
           </li>
         </ul>
-        <button className={s.expBtn} onClick={() => useScroll("work")}>
+        <button className={s.expBtn} onClick={() => handleScroll("about")}>
           {btnT} <ArrowIcon className={s.expBtnArrowIcon} />
         </button>
       </div>

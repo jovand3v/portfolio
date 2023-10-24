@@ -7,7 +7,6 @@ import ResumeDownloadIcon from "@/public/icons/resume-download.svg";
 import ArrowIcon from "@/public/icons/arrow.svg";
 import bgDecal from "@/public/background-decals/bg-decal-1.png";
 import HeroDropdown from "./hero-dropdown";
-import useScroll from "@/app/hooks/useScroll";
 
 type Props = {
   professionT: string;
@@ -21,6 +20,12 @@ type Props = {
 
 const Hero = (props: Props) => {
   const { professionT, descriptionT, resumeT, exploreT, aboutT, navWorkT, navContactT } = props;
+
+  const handleScroll = (section: "about" | "work" | "contact") => {
+    const el = document.getElementById(`${section}`);
+    const y = el!.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({ top: y, behavior: "smooth" });
+  };
 
   return (
     <header className={s.main}>
@@ -55,19 +60,19 @@ const Hero = (props: Props) => {
             {exploreT} <div className={s.navTitleLine}></div>
           </span>
           <ul className={s.navList}>
-            <li className={s.navItem} onClick={() => useScroll("about")}>
+            <li className={s.navItem} onClick={() => handleScroll("about")}>
               {aboutT}
             </li>
-            <li className={s.navItem} onClick={() => useScroll("work")}>
+            <li className={s.navItem} onClick={() => handleScroll("work")}>
               {navWorkT}
             </li>
-            <li className={s.navItem} onClick={() => useScroll("contact")}>
+            <li className={s.navItem} onClick={() => handleScroll("contact")}>
               {navContactT}
             </li>
           </ul>
         </nav>
       </div>
-      <ArrowIcon className={s.exploreIcon} onClick={() => useScroll("about")} />
+      <ArrowIcon className={s.exploreIcon} onClick={() => handleScroll("about")} />
       <Image src={bgDecal} className={`bgDecal ${s.bgDecal}`} quality={100} alt="" priority={true} />
     </header>
   );
