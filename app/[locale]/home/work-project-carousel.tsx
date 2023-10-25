@@ -28,6 +28,17 @@ const WorkProjectCarousel = (props: Props) => {
     }
   }, [selected, fullscreen]);
 
+  useEffect(() => {
+    const handleEsc = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setFullscreen(false);
+    };
+    if (fullscreen) {
+      window.addEventListener("keydown", handleEsc);
+    } else {
+      window.removeEventListener("keydown", handleEsc);
+    }
+  }, [fullscreen]);
+
   // Handle click and drag scrolling
   useEffect(() => {
     if (!listRef.current) return;
