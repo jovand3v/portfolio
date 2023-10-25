@@ -30,7 +30,7 @@
     "projects": {
       "pherra": {
         "subtitle": "2023 - Dizajnirao i programirao",
-        "description": "PHERRA je lični full-stack projekat e-trgovine sa posebno pravljenim cms-om kojem se može pristupiti putem /admin rute. PHERRA je hostovana na Vercel-u i napravljena koristeći: Next.js, TypeScript, SCSS, JWT, Prisma, Vercel Postgres Database, AWS S3 Bucket, i Figma."
+        "description": "PHERRA je lični full-stack projekat e-trgovine sa posebno pravljenim cms-om. PHERRA je hostovana na Vercel-u i napravljena koristeći: Next.js, TypeScript, SCSS, JWT, Prisma, Vercel Postgres Database, AWS S3 Bucket, i Figma."
       },
       "portfolio": {
         "subtitle": "2023 - Dizajnirao i programirao",

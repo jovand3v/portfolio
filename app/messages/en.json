@@ -30,7 +30,7 @@
     "projects": {
       "pherra": {
         "subtitle": "2023 - Designed & Coded",
-        "description": "PHERRA is a personal full-stack, e-commerce project with a custom built cms that can be accessed via the /admin route. PHERRA is hosted on Vercel and was built using: Next.js, TypeScript, SCSS, JWT, Prisma, Vercel Postgres Database, AWS S3 Bucket, and Figma."
+        "description": "PHERRA is a personal full-stack, e-commerce project with a custom built cms. PHERRA is hosted on Vercel and was built using: Next.js, TypeScript, SCSS, JWT, Prisma, Vercel Postgres Database, AWS S3 Bucket, and Figma."
       },
       "portfolio": {
         "subtitle": "2023 - Designed & Coded",

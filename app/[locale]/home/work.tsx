@@ -15,13 +15,23 @@ const Work = () => {
   return (
     <div className={s.main}>
       <WorkProjectShowcase
+        title="MASHDAPP"
+        subtitle={mashdappT("subtitle")}
+        description={mashdappT("description")}
+        liveLink="https://www.mashd.app/"
+        githubLink={null}
+        images={images.mashdapp}
+        reverse={true}
+        buttons={{ viewLive: buttonsT("viewLive"), code: buttonsT("code"), private: buttonsT("private") }}
+      />
+      <WorkProjectShowcase
         title="PHERRA"
         subtitle={pherraT("subtitle")}
         description={pherraT("description")}
         liveLink="https://pherra.vercel.app/"
         githubLink="https://github.com/Dremiq/PHERRA"
         images={images.pherra}
-        reverse={true}
+        reverse={false}
         buttons={{ viewLive: buttonsT("viewLive"), code: buttonsT("code"), private: buttonsT("private") }}
       />
       <WorkProjectShowcase
@@ -31,16 +41,6 @@ const Work = () => {
         liveLink="/"
         githubLink="https://github.com/Dremiq/portfolio"
         images={images.portfolio}
-        reverse={false}
-        buttons={{ viewLive: buttonsT("viewLive"), code: buttonsT("code"), private: buttonsT("private") }}
-      />
-      <WorkProjectShowcase
-        title="MASHDAPP"
-        subtitle={mashdappT("subtitle")}
-        description={mashdappT("description")}
-        liveLink="https://www.mashd.app/"
-        githubLink={null}
-        images={images.mashdapp}
         reverse={true}
         buttons={{ viewLive: buttonsT("viewLive"), code: buttonsT("code"), private: buttonsT("private") }}
       />
