@@ -101,6 +101,8 @@ const WorkProjectCarousel = (props: Props) => {
               alt=""
               className={s.mainImg}
               quality={100}
+              width={1200}
+              height={600}
               sizes="(max-width:650px) 90vw, (max-width: 1280px) 60vw, 70vw"
             />
           </div>
