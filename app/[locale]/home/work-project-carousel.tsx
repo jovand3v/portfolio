@@ -96,7 +96,7 @@ const WorkProjectCarousel = (props: Props) => {
             />
           )}
           <div className={s.mainImgContainer} onClick={() => setFullscreen(true)}>
-            <Image src={selected} alt="" className={s.mainImg} quality={100} fill={true} />
+            <Image src={selected} alt="" className={s.mainImg} quality={100} width={1200} height={600} />
           </div>
           {fullscreen && (
             <ArrowIcon
@@ -113,7 +113,7 @@ const WorkProjectCarousel = (props: Props) => {
               onClick={() => !dragging && setSelected(img)}
               ref={img === selected ? itemSelectedRef : null}
             >
-              <Image src={img} alt="" className={s.itemImg} fill={true} />
+              <Image src={img} alt="" className={s.itemImg} width={180} height={80} />
             </li>
           ))}
         </ul>
