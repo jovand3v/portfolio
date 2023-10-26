@@ -96,7 +96,13 @@ const WorkProjectCarousel = (props: Props) => {
             />
           )}
           <div className={s.mainImgContainer} onClick={() => setFullscreen(true)}>
-            <Image src={selected} alt="" className={s.mainImg} quality={100} width={1200} height={600} />
+            <Image
+              src={selected}
+              alt=""
+              className={s.mainImg}
+              quality={100}
+              sizes="(max-width:650px) 90vw, (max-width: 1280px) 60vw, 70vw"
+            />
           </div>
           {fullscreen && (
             <ArrowIcon
