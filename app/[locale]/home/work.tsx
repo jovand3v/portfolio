@@ -29,7 +29,7 @@ const Work = () => {
         subtitle={pherraT("subtitle")}
         description={pherraT("description")}
         liveLink="https://pherra.vercel.app/"
-        githubLink="https://github.com/Dremiq/PHERRA"
+        githubLink="https://github.com/jovand3v/PHERRA"
         images={images.pherra}
         reverse={false}
         buttons={{ viewLive: buttonsT("viewLive"), code: buttonsT("code"), private: buttonsT("private") }}
@@ -39,7 +39,7 @@ const Work = () => {
         subtitle={portfolioT("subtitle")}
         description={portfolioT("description")}
         liveLink="/"
-        githubLink="https://github.com/Dremiq/portfolio"
+        githubLink="https://github.com/jovand3v/portfolio"
         images={images.portfolio}
         reverse={true}
         buttons={{ viewLive: buttonsT("viewLive"), code: buttonsT("code"), private: buttonsT("private") }}
