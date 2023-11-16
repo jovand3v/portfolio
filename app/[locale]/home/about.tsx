@@ -56,7 +56,7 @@ const About = (props: Props) => {
             <span className={s.expItemTitle}>{expT.exp3.name}</span>
           </li>
         </ul>
-        <button className={s.expBtn} onClick={() => handleScroll("about")}>
+        <button className={s.expBtn} onClick={() => handleScroll("work")}>
           {btnT} <ArrowIcon className={s.expBtnArrowIcon} />
         </button>
       </div>
