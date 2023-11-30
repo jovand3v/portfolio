@@ -9,10 +9,12 @@ type Props = {
   lastNameT: string;
   messageT: string;
   buttonT: string;
+  messageSuccessT: string;
+  messageErrorT: string;
 };
 
 const ContactForm = (props: Props) => {
-  const { firstNameT, lastNameT, messageT, buttonT } = props;
+  const { firstNameT, lastNameT, messageT, buttonT, messageSuccessT, messageErrorT } = props;
   const [state, handleSubmitForm] = useForm(process.env.NEXT_PUBLIC_FORM!);
   const [message, setMessage] = useState("");
   const formRef = useRef<HTMLFormElement>(null);
@@ -20,13 +22,13 @@ const ContactForm = (props: Props) => {
   useEffect(() => {
     if (state.result) {
       if (state.result.kind === "success") {
-        setMessage("Form submitted!");
+        setMessage(messageSuccessT);
         if (formRef.current) {
           formRef.current.reset();
         }
       }
       if (state.errors !== null) {
-        setMessage("Form failed to submit.");
+        setMessage(messageErrorT);
       }
     }
   }, [state]);

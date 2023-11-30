@@ -31,6 +31,8 @@ const Contact = () => {
         lastNameT={t("form.lastName")}
         messageT={t("form.message")}
         buttonT={t("form.button")}
+        messageSuccessT={t("form.message_success")}
+        messageErrorT={t("form.message_error")}
       />
       <Image src={bgDecal} alt="" className={`bgDecal ${s.bgDecal}`} quality={100} />
     </div>

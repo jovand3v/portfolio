@@ -62,7 +62,9 @@
       "lastName": "Last Name",
       "email": "E-mail",
       "message": "Message",
-      "button": "Submit"
+      "button": "Submit",
+      "message_success": "Form submitted!",
+      "message_error": "Form failed to submit."
     }
   },
   "Footer": {

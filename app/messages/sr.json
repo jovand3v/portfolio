@@ -67,7 +67,9 @@
       "lastName": "Prezime",
       "email": "E-mail",
       "message": "Poruka",
-      "button": "Pošalji"
+      "button": "Pošalji",
+      "message_success": "Obrazac poslat!",
+      "message_error": "Greška pri slanju obrasca."
     }
   },
   "Footer": {
