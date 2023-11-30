@@ -44,14 +44,20 @@ const Hero = (props: Props) => {
           <p className={s.description}>{descriptionT}</p>
           <ul className={s.socials}>
             <li className={s.social}>
-              <LinkedInIcon className={s.socialIcon} />
+              <a href="https://www.linkedin.com/in/jovanilic23/" target="_blank">
+                <LinkedInIcon className={s.socialIcon} />
+              </a>
             </li>
             <li className={s.social}>
-              <GithubIcon className={s.socialIcon} />
+              <a href="https://www.linkedin.com/in/jovanilic23/" target="_blank">
+                <GithubIcon className={s.socialIcon} />
+              </a>
             </li>
             <li className={`${s.social} ${s.socialResume}`}>
-              <span className={s.socialText}>{resumeT}</span>
-              <ResumeDownloadIcon className={`${s.socialIcon} ${s.resumeIcon}`} />
+              <a href="/cv.pdf" download="cv-jovanilic" className={s.social}>
+                <span className={s.socialText}>{resumeT}</span>
+                <ResumeDownloadIcon className={`${s.socialIcon} ${s.resumeIcon}`} />
+              </a>
             </li>
           </ul>
         </div>

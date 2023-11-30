@@ -18,8 +18,12 @@ const Contact = () => {
         </header>
         <p className={s.description}>{t("sub_section.description")}</p>
         <div className={s.socialIcons}>
-          <LinkedInIcon className={s.socialIcon} />
-          <GithubIcon className={s.socialIcon} />
+          <a href="https://www.linkedin.com/in/jovanilic23/" target="_blank">
+            <LinkedInIcon className={s.socialIcon} />
+          </a>
+          <a href="https://www.linkedin.com/in/jovanilic23/" target="_blank">
+            <GithubIcon className={s.socialIcon} />
+          </a>
         </div>
       </div>
       <ContactForm
