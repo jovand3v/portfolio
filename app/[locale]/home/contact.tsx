@@ -4,6 +4,7 @@ import LinkedInIcon from "@/public/icons/linked-in.svg";
 import bgDecal from "@/public/background-decals/bg-decal-1.png";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import ContactForm from "./contact-form";
 
 const Contact = () => {
   const t = useTranslations("Contact");
@@ -21,15 +22,12 @@ const Contact = () => {
           <GithubIcon className={s.socialIcon} />
         </div>
       </div>
-      <form className={s.form}>
-        <div className={s.nameInputContainer}>
-          <input className={`${s.input} ${s.nameInput}`} placeholder={t("form.firstName")} />
-          <input className={`${s.input} ${s.nameInput}`} placeholder={t("form.lastName")} />
-        </div>
-        <input className={s.input} placeholder="E-mail" />
-        <textarea className={`${s.input} ${s.messageInput}`} placeholder={t("form.message")} />
-        <button className={s.formBtn}>{t("form.button")}</button>
-      </form>
+      <ContactForm
+        firstNameT={t("form.firstName")}
+        lastNameT={t("form.lastName")}
+        messageT={t("form.message")}
+        buttonT={t("form.button")}
+      />
       <Image src={bgDecal} alt="" className={`bgDecal ${s.bgDecal}`} quality={100} />
     </div>
   );

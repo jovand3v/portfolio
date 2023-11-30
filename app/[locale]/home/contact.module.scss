@@ -51,6 +51,9 @@
   &::placeholder {
     text-transform: uppercase;
   }
+  &:required:invalid:focus {
+    border-color: rgb(245, 48, 48);
+  }
 }
 .nameInput {
   width: 50%;
@@ -71,6 +74,11 @@
 .bgDecal {
   right: 0px;
   top: 30%;
+}
+.btnAndStateContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 @media screen and (max-width: 1920px) {
   .title {
