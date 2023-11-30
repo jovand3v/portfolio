@@ -49,7 +49,7 @@ const Hero = (props: Props) => {
               </a>
             </li>
             <li className={s.social}>
-              <a href="https://www.linkedin.com/in/jovanilic23/" target="_blank">
+              <a href="https://github.com/jovand3v" target="_blank">
                 <GithubIcon className={s.socialIcon} />
               </a>
             </li>

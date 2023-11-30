@@ -21,7 +21,7 @@ const Contact = () => {
           <a href="https://www.linkedin.com/in/jovanilic23/" target="_blank">
             <LinkedInIcon className={s.socialIcon} />
           </a>
-          <a href="https://www.linkedin.com/in/jovanilic23/" target="_blank">
+          <a href="https://github.com/jovand3v" target="_blank">
             <GithubIcon className={s.socialIcon} />
           </a>
         </div>
