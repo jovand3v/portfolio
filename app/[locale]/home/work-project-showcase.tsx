@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Url } from "next/dist/shared/lib/router/router";
 import CodeIcon from "@/public/icons/code.svg";
 import EyeIcon from "@/public/icons/eye.svg";
+import EyeOffIcon from "@/public/icons/eye-off.svg";
 import { StaticImageData } from "next/image";
 import { useState } from "react";
 
@@ -12,11 +13,11 @@ type Props = {
   title: string;
   subtitle: string;
   description: string;
-  liveLink: Url;
+  liveLink?: Url;
   githubLink: Url | null;
   reverse?: boolean;
   images: StaticImageData[];
-  buttons: { viewLive: string; code: string; private: string };
+  buttons: { viewLive: string; code: string; codePrivate: string; viewLivePrivate: string };
 };
 
 const WorkProjectShowcase = (props: Props) => {
@@ -33,11 +34,17 @@ const WorkProjectShowcase = (props: Props) => {
         </header>
         <p className={s.description}>{description}</p>
         <div className={s.btns}>
-          <Link href={liveLink} target="_blank" className={s.btnLinkWrapper}>
-            <button className={s.btn}>
-              {buttons.viewLive} <EyeIcon className={s.btnIcon} />
+          {liveLink ? (
+            <Link href={liveLink} target="_blank" className={s.btnLinkWrapper}>
+              <button className={s.btn}>
+                {buttons.viewLive} <EyeIcon className={s.btnIcon} />
+              </button>
+            </Link>
+          ) : (
+            <button className={`${s.btn} ${s.btnDisabled}`} disabled={true}>
+              {buttons.viewLivePrivate} <EyeOffIcon className={s.btnIcon} />
             </button>
-          </Link>
+          )}
           {githubLink ? (
             <Link href={githubLink} target="_blank" className={s.btnLinkWrapper}>
               <button className={s.btn}>
@@ -46,7 +53,7 @@ const WorkProjectShowcase = (props: Props) => {
             </Link>
           ) : (
             <button className={`${s.btn} ${s.btnDisabled}`} disabled={true}>
-              {buttons.private} <CodeIcon className={s.btnIcon} />
+              {buttons.codePrivate} <CodeIcon className={s.btnIcon} />
             </button>
           )}
         </div>

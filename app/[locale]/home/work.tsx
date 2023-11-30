@@ -18,11 +18,15 @@ const Work = () => {
         title="MASHDAPP"
         subtitle={mashdappT("subtitle")}
         description={mashdappT("description")}
-        liveLink="https://www.mashd.app/"
         githubLink={null}
         images={images.mashdapp}
         reverse={true}
-        buttons={{ viewLive: buttonsT("viewLive"), code: buttonsT("code"), private: buttonsT("private") }}
+        buttons={{
+          viewLive: buttonsT("viewLive"),
+          code: buttonsT("code"),
+          codePrivate: buttonsT("codePrivate"),
+          viewLivePrivate: buttonsT("viewLivePrivate"),
+        }}
       />
       <WorkProjectShowcase
         title="PHERRA"
@@ -32,7 +36,12 @@ const Work = () => {
         githubLink="https://github.com/jovand3v/PHERRA"
         images={images.pherra}
         reverse={false}
-        buttons={{ viewLive: buttonsT("viewLive"), code: buttonsT("code"), private: buttonsT("private") }}
+        buttons={{
+          viewLive: buttonsT("viewLive"),
+          code: buttonsT("code"),
+          codePrivate: buttonsT("codePrivate"),
+          viewLivePrivate: buttonsT("viewLivePrivate"),
+        }}
       />
       <WorkProjectShowcase
         title="PORTFOLIO"
@@ -42,7 +51,12 @@ const Work = () => {
         githubLink="https://github.com/jovand3v/portfolio"
         images={images.portfolio}
         reverse={true}
-        buttons={{ viewLive: buttonsT("viewLive"), code: buttonsT("code"), private: buttonsT("private") }}
+        buttons={{
+          viewLive: buttonsT("viewLive"),
+          code: buttonsT("code"),
+          codePrivate: buttonsT("codePrivate"),
+          viewLivePrivate: buttonsT("viewLivePrivate"),
+        }}
       />
       <WorkProjectShowcase
         title="KEEPTRACK"
@@ -52,7 +66,12 @@ const Work = () => {
         githubLink=""
         images={images.keep_track}
         reverse={false}
-        buttons={{ viewLive: buttonsT("viewLive"), code: buttonsT("code"), private: buttonsT("private") }}
+        buttons={{
+          viewLive: buttonsT("viewLive"),
+          code: buttonsT("code"),
+          codePrivate: buttonsT("codePrivate"),
+          viewLivePrivate: buttonsT("viewLivePrivate"),
+        }}
       />
       <Image src={bgDecal} className={`bgDecal ${s.bgDecal}`} alt="" quality={100} />
     </div>
