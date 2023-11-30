@@ -2,6 +2,7 @@ import "../styles/globals.scss";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { notFound } from "next/navigation";
+import { Analytics } from "@vercel/analytics/react";
 
 const poppins = Poppins({ weight: ["300", "400", "700"], subsets: ["latin"] });
 
@@ -24,7 +25,9 @@ export default function RootLayout({ children, params: { locale } }: Props) {
 
   return (
     <html lang={locale}>
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        {children} <Analytics />
+      </body>
     </html>
   );
 }
