@@ -42,7 +42,7 @@
       },
       "keeptrack": {
         "subtitle": "2021 - Dizajnirao i programirao",
-        "description": "Keep-track je lični front-end projekat za praćenje nutrijenata. Hostovan je na Netlify-u i napravljen koristeći: React, Redux, SCSS, chart.js, i Figma. Projekat je inicijalno napravljen za personalno korišćenje, ali bih kasnije odlučio da ga redizajniram, brendiram, i stavim kao jedan od svojih projekata za prikaz iako je napravljen 2021. godine."
+        "description": "KeepTrack je lični front-end projekat za praćenje nutrijenata. Hostovan je na Netlify-u i napravljen koristeći: React, Redux, SCSS, chart.js, i Figma. Projekat je inicijalno napravljen za personalno korišćenje, ali bih kasnije odlučio da ga redizajniram, brendiram, i stavim kao jedan od svojih projekata za prikaz iako je napravljen 2021. godine."
       }
     },
     "buttons": { "viewLive": "Pogledaj uživo", "code": "Kod", "private": "Privatno" }
