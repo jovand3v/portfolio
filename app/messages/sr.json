@@ -34,7 +34,7 @@
       },
       "portfolio": {
         "subtitle": "2023 - Dizajnirao i programirao",
-        "description": "PORTFOLIO je lični projekat za predstavljanje mog rada, veština i iskustva. Hostovan je na Vercel-u i napravljen koristeći: Next.js, TypeScript, SCSS, i Figma."
+        "description": "Portfolio je lični projekat koji sluzi za predstavljanje mog rada, veština i iskustva. Hostovan je na Vercel-u i napravljen koristeći: Next.js, TypeScript, SCSS, i Figma."
       },
       "mashdapp": {
         "subtitle": "2022 - Parcijalno dizajnirao i programirao",
@@ -42,7 +42,7 @@
       },
       "keeptrack": {
         "subtitle": "2021 - Dizajnirao i programirao",
-        "description": "KEEPTRACK je lični front-end projekat za praćenje nutrijenata. Hostovan je na Netlify-u i napravljen koristeći: React, Redux, SCSS, chart.js, i Figma. Projekat je inicijalno napravljen za personalno korišćenje, ali bih kasnije odlučio da ga redizajniram, brendiram, i stavim kao jedan od svojih projekata za prikaz iako je napravljen 2021. godine."
+        "description": "Keep-track je lični front-end projekat za praćenje nutrijenata. Hostovan je na Netlify-u i napravljen koristeći: React, Redux, SCSS, chart.js, i Figma. Projekat je inicijalno napravljen za personalno korišćenje, ali bih kasnije odlučio da ga redizajniram, brendiram, i stavim kao jedan od svojih projekata za prikaz iako je napravljen 2021. godine."
       }
     },
     "buttons": { "viewLive": "Pogledaj uživo", "code": "Kod", "private": "Privatno" }
