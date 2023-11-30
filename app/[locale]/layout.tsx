@@ -26,7 +26,8 @@ export default function RootLayout({ children, params: { locale } }: Props) {
   return (
     <html lang={locale}>
       <body className={poppins.className}>
-        {children} <Analytics />
+        {children}
+        <Analytics />
       </body>
     </html>
   );
