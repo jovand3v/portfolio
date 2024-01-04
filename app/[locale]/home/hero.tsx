@@ -54,7 +54,7 @@ const Hero = (props: Props) => {
               </a>
             </li>
             <li className={`${s.social} ${s.socialResume}`}>
-              <a href="/cv-jovanilic.pdf" download="cv-jovanilic" className={s.social}>
+              <a href="/cv-jovan-ilic.pdf" download="cv-jovan-ilic" className={s.social}>
                 <span className={s.socialText}>{resumeT}</span>
                 <ResumeDownloadIcon className={`${s.socialIcon} ${s.resumeIcon}`} />
               </a>
